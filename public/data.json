@@ -1,0 +1,12 @@
+{
+  "user": { "name": "Rahul L.", "score": 767, "date": "19th Apr '22" },
+  "accounts": { "total": 13, "closedCards": 4, "closedLoans": 1, "openCards": 2, "openLoans": 6 },
+  "disputes": 12,
+  "enquiries": 5,
+  "history": [
+    { "date": "01/05/2022", "score": 693 },
+    { "date": "20/06/2022", "score": 720 },
+    { "date": "15/07/2022", "score": 510 },
+    { "date": "19/08/2022", "score": 767 }
+  ]
+}
