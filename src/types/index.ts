@@ -24,3 +24,9 @@ export interface DashboardData {
   enquiries: number;
   history: History[];
 }
+
+export interface ChartItem {
+  label: string;
+  value: number;
+  color: string;
+}
