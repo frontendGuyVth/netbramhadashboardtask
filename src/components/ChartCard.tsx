@@ -118,7 +118,7 @@ const ChartCard: React.FC<ChartCardProps> = ({ history }) => {
       <div className="bg-[#F7F9FA] rounded-xl p-6 border border-[#e6f0f5] shadow-sm flex flex-col md:flex-col md:items-start relative">
         <div className="flex-grow">
           <div className="p-0 m-0">
-            <span className="block text-sm text-gray-500 mb-5">
+            <span className="block text-[16px] text-[#262626] mb-5">
               Trended view of the changes in your NB Score with every refresh.
             </span>
             <Line data={data} options={options} width={600} height={250} />
@@ -135,7 +135,7 @@ const CardHeaderComponent = () => {
   return (
     <div className="!mb-6 md:mb-0 md:mr-6">
       <div className="flex items-center mb-1">
-        <h2 className="text-[#0074b9] font-semibold text-base mr-2">
+        <h2 className="text-[#046899] font-bold text-[18px] mr-2">
           NB SCORE HISTORY
         </h2>
         <span className="ml-2 flex-shrink-0 relative group">

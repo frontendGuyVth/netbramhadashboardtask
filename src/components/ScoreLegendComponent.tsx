@@ -11,7 +11,7 @@ export const ScoreLegendComponent = () => {
 
   return (
     <div className="bg-white border border-gray-100 rounded-lg p-4 shadow-sm">
-      <div className="font-semibold text-gray-700 mb-3">August 2022</div>
+      <div className="font-bold text-[16px] text-[#262626] mb-3">August 2022</div>
       {legendData.map((entry, idx) => (
         <div
           key={idx}
@@ -19,13 +19,13 @@ export const ScoreLegendComponent = () => {
         >
           <span className="w-6 flex justify-center items-center mr-2">
             {entry.type === "up" && (
-              <ArrowUpRight size={18} className="text-green-500" />
+              <ArrowUpRight size={18} className="text-[#008A00]" />
             )}
             {entry.type === "down" && (
-              <ArrowDownLeft size={18} className="text-red-500" />
+              <ArrowDownLeft size={18} className="text-[#EB0000]" />
             )}
             {entry.type === "steady" && (
-              <ArrowRight size={18} className="text-blue-500" />
+              <ArrowRight size={18} className="text-[#00A6CA]" />
             )}
             {entry.type === "none" && (
               <span className="text-gray-400 font-semibold">N/H</span>
@@ -33,12 +33,12 @@ export const ScoreLegendComponent = () => {
           </span>
           <span
             className={`w-12 font-bold ${
-              entry.type === "none" ? "text-gray-400" : "text-gray-800"
+              entry.type === "none" ? "text-[#BFBFBF]" : "text-[#262626]"
             }`}
           >
             {entry.score}
           </span>
-          <span className="ml-auto text-gray-500">{entry.date}</span>
+          <span className="ml-auto text-[#262626]">{entry.date}</span>
         </div>
       ))}
     </div>
