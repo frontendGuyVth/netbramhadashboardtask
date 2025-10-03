@@ -107,7 +107,7 @@ const DonutChart = ({
   return (
     <svg width={200} height={200} viewBox="0 0 200 200">
       <g transform="rotate(-90 100 100)">
-        {data.map((d, i) => {
+        {data.map((d) => {
           const dash = (d.value / totalValue) * circumference;
           const el = (
             <circle

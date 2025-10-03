@@ -36,12 +36,7 @@ const ranges = [
   },
 ];
 
-const getScoreIndex = (score: number) => {
-  return ranges.findIndex((range) => score >= range.min && score <= range.max);
-};
-
 const ProgressCard: React.FC<ProgressCardProps> = ({ score }) => {
-  const scoreIndex = getScoreIndex(score);
 
   return (
     <div className="bg-[white] shadow rounded-xl p-6">
@@ -68,7 +63,7 @@ const ProgressCard: React.FC<ProgressCardProps> = ({ score }) => {
             ))}
           </div>
           <div className="flex w-full mt-1">
-            {ranges.map((range, idx) => (
+            {ranges.map((range) => (
               <div
                 key={range.label + "_label"}
                 style={{ width: `${range.percentage}%` }}
