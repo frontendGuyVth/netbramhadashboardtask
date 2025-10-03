@@ -10,6 +10,7 @@ import { AlertTriangle, FileSearch } from "lucide-react";
 import ChartCard from "../components/ChartCard";
 import ProgressCard from "../components/ProgressCard";
 import { ScoreLegendComponent } from "../components/ScoreLegendComponent";
+import { FooterComponent } from "../components/Footer";
 
 const Dashboard: React.FC = () => {
   const [data, setData] = useState<DashboardData | null>(null);
@@ -53,9 +54,13 @@ const Dashboard: React.FC = () => {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-1 gap-6 pt-[40px] px-[48px] bg-white border-none">
+        <div className="grid grid-cols-1 lg:grid-cols-1 gap-6 pt-[40px] px-[48px] bg-white border-none pb-[120px]">
           <ProgressCard score={data.user.score} />
         </div>
+        <hr />
+        <footer className="bg-white h-[100px]">
+          <FooterComponent />
+        </footer>
       </main>
     </div>
   );
